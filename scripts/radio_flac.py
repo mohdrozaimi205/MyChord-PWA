@@ -42,5 +42,6 @@ addon = {
 with open("addons/radio-flac.json", "w", encoding="utf-8") as f:
     json.dump(addon, f, ensure_ascii=False, indent=1)
 print("stesen:", len(items))
+for i in items: print(" -", i["title"], "|", i["artist"])
 if not items:
     raise SystemExit("Tiada stesen dijumpai")
