@@ -1,0 +1,24 @@
+{
+ "addons": [
+  {
+   "id": "autoeq",
+   "name": "Pembetul Bunyi Earphone (AutoEq)"
+  },
+  {
+   "id": "normalize",
+   "name": "Kelantangan Seimbang"
+  },
+  {
+   "id": "autoquality",
+   "name": "Kualiti Auto Pintar"
+  },
+  {
+   "id": "crossfade",
+   "name": "Crossfade & Tanpa Jeda"
+  },
+  {
+   "id": "eqpack",
+   "name": "Pek Pratetap EQ"
+  }
+ ]
+}
