@@ -1,5 +1,5 @@
 /* Service worker MyChord — simpan kulit app untuk buka pantas & luar talian */
-const CACHE = 'mychord-v1';
+const CACHE = 'mychord-v2';
 const SHELL = ['./', 'index.html', 'styles.css', 'app.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL))); self.skipWaiting(); });
 self.addEventListener('activate', (e) => {

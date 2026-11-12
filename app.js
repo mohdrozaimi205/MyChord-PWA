@@ -599,9 +599,14 @@ let installEvt = null;
 window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); installEvt = e; $('#btnInstall').hidden = false; renderSettings(); });
 $('#btnInstall').onclick = installNow;
 async function installNow() {
-  if (installEvt) { installEvt.prompt(); await installEvt.userChoice; installEvt = null; $('#btnInstall').hidden = true; }
-  else showPage('settings');
+  if (installEvt) { installEvt.prompt(); await installEvt.userChoice; installEvt = null; $('#btnInstall').hidden = true; return; }
+  const ios = `<li>${esc(t('install_ios'))}</li>`;
+  const android = LANG === 'ms'
+    ? '<li>Chrome: tekan ⋮ → "Tambah ke skrin utama" / "Install app". Jika tiada, guna lagu sekejap (30 saat) dan muat semula laman.</li><li>Samsung Internet: ≡ → "Add page to" → "Home screen".</li>'
+    : '<li>Chrome: tap ⋮ → "Add to Home screen" / "Install app". If missing, use the app for ~30 seconds and reload.</li><li>Samsung Internet: ≡ → "Add page to" → "Home screen".</li>';
+  sheet(`<h3>${esc(t('install_title'))}</h3><ol class="steps small">${isIOS ? ios : android + ios}</ol>`);
 }
+if (!isStandalone()) $('#btnInstall').hidden = false;
 function renderSettings() {
   const cur = store.get('theme', 'ember');
   const sw = $('#swatches');
