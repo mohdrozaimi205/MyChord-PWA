@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>MyChord</title>
+  <meta name="description" content="MyChord — ad-free music player: YouTube Music, radio, podcasts, lyrics, themes and listen together.">
+  <meta name="theme-color" content="#0E0B0A">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="MyChord">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="wall"></div>
+
+  <main id="app">
+    <!-- UTAMA -->
+    <section class="page" id="page-home">
+      <header class="top">
+        <div class="titles">
+          <div class="overline" id="greet"></div>
+          <h1 data-t="home_title"></h1>
+        </div>
+        <button class="round ghost" id="btnInstall" title="Install" hidden>
+          <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+        </button>
+        <button class="round logo" id="btnShare" title="Share"><svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11A2.99 2.99 0 0 0 21 5a3 3 0 1 0-5.91.7L8.04 9.81A3 3 0 1 0 6 15c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65A2.92 2.92 0 1 0 18 16.08z"/></svg></button>
+        <button class="round accent" id="btnProfile" title="Settings"><span id="profileLetter"></span></button>
+      </header>
+      <div class="tiles" id="tiles"></div>
+      <div id="shelves"></div>
+    </section>
+
+    <!-- CARI -->
+    <section class="page" id="page-search" hidden>
+      <header class="top"><div class="titles"><h1 data-t="search"></h1></div></header>
+      <form class="searchbar" id="searchForm">
+        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <input id="searchInput" type="search" autocomplete="off" enterkeyhint="search">
+      </form>
+      <div class="chips" id="suggest"></div>
+      <div class="status" id="searchStatus"></div>
+      <div class="list" id="searchList"></div>
+    </section>
+
+    <!-- PUSTAKA -->
+    <section class="page" id="page-library" hidden>
+      <header class="top"><div class="titles"><h1 data-t="library"></h1></div></header>
+      <div class="rows" id="libRows"></div>
+      <div class="sectionhead"><h2 data-t="playlists"></h2><button class="round accent small" id="btnNewPl">+</button></div>
+      <div class="rows" id="libPlaylists"></div>
+    </section>
+
+    <!-- TETAPAN -->
+    <section class="page" id="page-settings" hidden>
+      <header class="top"><div class="titles"><h1 data-t="settings"></h1></div></header>
+      <div class="overline pad" data-t="theme"></div>
+      <div class="swatches" id="swatches"></div>
+      <div class="overline pad" data-t="language"></div>
+      <div class="chips pad" id="langChips"></div>
+      <div class="overline pad" data-t="install_title"></div>
+      <div class="card pad-card" id="installCard"></div>
+      <div class="overline pad" data-t="source"></div>
+      <div class="card pad-card">
+        <p class="dim small" data-t="source_note"></p>
+        <input class="field" id="instanceInput" placeholder="https://pipedapi.example.com">
+        <button class="btn tonal" id="btnSaveInstance" data-t="save"></button>
+      </div>
+      <div class="overline pad" data-t="android_title"></div>
+      <div class="card pad-card"><p class="dim small" data-t="android_note"></p></div>
+      <p class="about" id="about"></p>
+    </section>
+
+    <!-- SENARAI (paparan dalaman) -->
+    <section class="page" id="page-list" hidden>
+      <header class="bar">
+        <button class="icon" id="listBack"><svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></button>
+        <h2 id="listTitle"></h2>
+        <button class="icon" id="listSave" hidden><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></button>
+      </header>
+      <form class="searchbar" id="listSearchForm" hidden>
+        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <input id="listSearch" type="search" autocomplete="off" enterkeyhint="search">
+      </form>
+      <div class="actions" id="listActions">
+        <button class="btn accent" id="listPlay"><span data-t="play_all"></span></button>
+        <button class="btn tonal" id="listShuffle"><span data-t="shuffle"></span></button>
+      </div>
+      <div class="status" id="listStatus"></div>
+      <div class="list" id="listItems"></div>
+    </section>
+  </main>
+
+  <!-- PEMAIN MINI -->
+  <div id="mini" hidden>
+    <img id="miniArt" alt="">
+    <div class="mini-text"><b id="miniTitle"></b><span id="miniArtist"></span></div>
+    <button class="icon" id="miniPlay"></button>
+    <button class="icon" id="miniNext"><svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg></button>
+    <div id="miniProgress"></div>
+  </div>
+
+  <!-- NAVIGASI BAWAH -->
+  <nav id="nav">
+    <button data-page="home" class="on"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg><span data-t="home"></span></button>
+    <button data-page="search"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg><span data-t="search"></span></button>
+    <button data-page="library"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 5h-3v5.5a2.5 2.5 0 1 1-2.5-2.5c.57 0 1.08.19 1.5.51V5h4v2zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z"/></svg><span data-t="library"></span></button>
+    <button data-page="settings"><svg viewBox="0 0 24 24"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg><span data-t="settings"></span></button>
+  </nav>
+
+  <!-- PEMAIN PENUH -->
+  <div id="player" hidden>
+    <div id="pBg"></div>
+    <div class="p-inner" id="pSheet">
+      <div class="p-top">
+        <button class="icon" id="pClose"><svg viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+        <span class="overline light" data-t="now_playing"></span>
+        <button class="icon" id="pQueueBtn"><svg viewBox="0 0 24 24"><path d="M15 6H3v2h12V6zm0 4H3v2h12v-2zM3 16h8v-2H3v2zM17 6v8.18A3 3 0 1 0 19 17V8h3V6h-5z"/></svg></button>
+      </div>
+      <div class="p-stage">
+        <img id="pArt" alt="">
+        <div id="pLyrics" hidden></div>
+      </div>
+      <div class="p-meta">
+        <div><h2 id="pTitle"></h2><p id="pArtist"></p></div>
+        <button class="icon" id="pLike"></button>
+      </div>
+      <input type="range" id="pSeek" min="0" max="1000" value="0">
+      <div class="p-times"><span id="pPos">0:00</span><span id="pBadge"></span><span id="pDur">0:00</span></div>
+      <div class="p-controls">
+        <button class="icon" id="pShuffle"><svg viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg></button>
+        <button class="icon big" id="pPrev"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg></button>
+        <button class="playbtn" id="pPlay"></button>
+        <button class="icon big" id="pNext"><svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg></button>
+        <button class="icon" id="pRepeat"><svg viewBox="0 0 24 24"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/></svg></button>
+      </div>
+      <div class="p-chips" id="pChips"></div>
+    </div>
+  </div>
+
+  <!-- YouTube (audio sahaja, video disembunyikan) -->
+  <div id="ytHolder"><div id="yt"></div></div>
+  <audio id="audio" preload="none" playsinline></audio>
+  <input type="file" id="filePick" accept="audio/*" multiple hidden>
+
+  <div id="sheet" hidden><div class="sheet-card" id="sheetCard"></div></div>
+  <div id="toast" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
