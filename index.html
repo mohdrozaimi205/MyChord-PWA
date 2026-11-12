@@ -32,6 +32,10 @@
         <button class="round logo" id="btnShare" title="Share"><svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11A2.99 2.99 0 0 0 21 5a3 3 0 1 0-5.91.7L8.04 9.81A3 3 0 1 0 6 15c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65A2.92 2.92 0 1 0 18 16.08z"/></svg></button>
         <button class="round accent" id="btnProfile" title="Settings"><span id="profileLetter"></span></button>
       </header>
+      <a class="apkbanner" id="apkBanner" href="MyChord.apk" download="MyChord.apk" hidden>
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></span>
+        <span><b data-t="apk_btn"></b><small data-t="apk_sub"></small></span>
+      </a>
       <div class="tiles" id="tiles"></div>
       <div id="shelves"></div>
     </section>
@@ -65,6 +69,11 @@
       <div class="chips pad" id="langChips"></div>
       <div class="overline pad" data-t="install_title"></div>
       <div class="card pad-card" id="installCard"></div>
+      <div class="overline pad" data-t="apk_title"></div>
+      <div class="card pad-card">
+        <p class="small" data-t="apk_note"></p>
+        <a class="btn accent dl" href="MyChord.apk" download="MyChord.apk" data-t="apk_btn"></a>
+      </div>
       <div class="overline pad" data-t="source"></div>
       <div class="card pad-card">
         <p class="dim small" data-t="source_note"></p>

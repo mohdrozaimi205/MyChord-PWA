@@ -160,3 +160,9 @@ h2 { margin: 0; font-size: 19px; }
 #toast { position: fixed; left: 50%; bottom: calc(150px + var(--safe-bottom)); transform: translateX(-50%); background: #222; color: #fff; padding: 10px 16px; border-radius: 12px; font-size: 13.5px; z-index: 30; max-width: 90%; box-shadow: 0 6px 20px rgba(0,0,0,.4); }
 
 #ytHolder { position: fixed; width: 1px; height: 1px; left: -10px; bottom: 0; overflow: hidden; opacity: 0; pointer-events: none; }
+
+a.btn.dl { display: flex; align-items: center; justify-content: center; text-decoration: none; margin-top: 10px; }
+.apkbanner { display: flex; align-items: center; gap: 12px; margin: 14px 16px 0; padding: 12px 14px; border-radius: 18px; text-decoration: none; color: var(--on-accent); background: var(--accent); }
+.apkbanner .ic { width: 38px; height: 38px; border-radius: 50%; background: rgba(0,0,0,.15); display: grid; place-items: center; flex: none; }
+.apkbanner .ic svg { width: 20px; height: 20px; }
+.apkbanner b { display: block; font-size: 15px; } .apkbanner small { font-size: 12px; opacity: .85; }

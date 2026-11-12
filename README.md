@@ -4,6 +4,9 @@ Versi web MyChord untuk **iPhone, iPad dan komputer**. Buka:
 
 **https://mohdrozaimi205.github.io/MyChord-PWA/**
 
+## Muat turun app Android (APK)
+**https://mohdrozaimi205.github.io/MyChord-PWA/MyChord.apk**
+
 ## Pasang di skrin utama (iPhone/iPad)
 1. Buka pautan di atas dalam **Safari**
 2. Tekan butang **Kongsi** (petak dengan anak panah ke atas)

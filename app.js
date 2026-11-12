@@ -29,6 +29,8 @@ const I18N = {
     install_android: 'Di Android (Chrome): tekan butang Pasang di atas, atau menu ⋮ → "Install app".', install_done: 'MyChord sudah dipasang di skrin utama ✓', install_btn: 'Pasang MyChord',
     share_text: 'Cuba MyChord — app muzik tanpa iklan: YouTube Music, radio, podcast, lirik, tema kaca & dengar bersama. Buka: ',
     skipped: 'Lagu ini tidak boleh dimainkan, langkau…', files_added: ' fail ditambah',
+    apk_title: 'App Android (APK)', apk_btn: 'Muat turun app Android', apk_sub: 'Versi penuh: kenal lagu, Dolby, log masuk akaun',
+    apk_note: 'Versi Android lebih lengkap. Selepas muat turun, buka fail MyChord.apk dan tekan Pasang (benarkan "Pasang dari sumber ini" jika ditanya).',
   },
   en: {
     home: 'Home', search: 'Search', library: 'Library', settings: 'Settings', home_title: 'Listen now',
@@ -56,6 +58,8 @@ const I18N = {
     install_android: 'On Android (Chrome): tap the Install button above, or menu ⋮ → "Install app".', install_done: 'MyChord is installed on your home screen ✓', install_btn: 'Install MyChord',
     share_text: 'Try MyChord — ad-free music: YouTube Music, radio, podcasts, lyrics, glass themes & listen together. Open: ',
     skipped: 'This song can\'t be played, skipping…', files_added: ' files added',
+    apk_title: 'Android app (APK)', apk_btn: 'Download the Android app', apk_sub: 'Full version: song recognition, Dolby, account sign-in',
+    apk_note: 'The Android version has more features. After downloading, open MyChord.apk and tap Install (allow "Install from this source" if asked).',
   },
 };
 const store = {
@@ -67,6 +71,7 @@ const t = (k) => (I18N[LANG] && I18N[LANG][k]) || I18N.en[k] || k;
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const APP_URL = 'https://mohdrozaimi205.github.io/MyChord-PWA/';
+const APK_URL = APP_URL + 'MyChord.apk';
 
 /* ---------------- Tema ---------------- */
 const THEMES = [
@@ -607,6 +612,7 @@ async function installNow() {
   sheet(`<h3>${esc(t('install_title'))}</h3><ol class="steps small">${isIOS ? ios : android + ios}</ol>`);
 }
 if (!isStandalone()) $('#btnInstall').hidden = false;
+$('#apkBanner').hidden = !/android/i.test(navigator.userAgent);
 function renderSettings() {
   const cur = store.get('theme', 'ember');
   const sw = $('#swatches');
@@ -834,7 +840,7 @@ function togetherMenu() {
 /* ---------------- Mula ---------------- */
 document.querySelectorAll('#nav button').forEach((b) => (b.onclick = () => showPage(b.dataset.page)));
 $('#btnProfile').onclick = () => showPage('settings');
-$('#btnShare').onclick = () => shareText(t('share_text') + APP_URL, APP_URL);
+$('#btnShare').onclick = () => shareText(t('share_text') + APP_URL + (LANG === 'ms' ? '\nAndroid APK: ' : '\nAndroid APK: ') + APK_URL, APP_URL);
 $('#profileLetter').textContent = 'M';
 applyTheme(store.get('theme', 'ember'));
 translate();
