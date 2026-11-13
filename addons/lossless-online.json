@@ -1,0 +1,109 @@
+{
+  "name": "Radio Lossless Online",
+  "desc": "Radio FLAC/Hi-Res percuma • tanpa server • dengar di mana-mana",
+  "type": "radio",
+  "items": [
+    {
+      "title": "SomaFM Groove Salad",
+      "artist": "Chill • Ambient • Downtempo",
+      "stream": "https://hls.somafm.com/hls/groovesalad/FLAC/program.m3u8",
+      "badge": "FLAC"
+    },
+    {
+      "title": "SomaFM Groove Salad (Unprocessed)",
+      "artist": "Chill • Audiophile Mix",
+      "stream": "https://hls.somafm.com/hls/gs-unprocessed/FLAC/program.m3u8",
+      "badge": "FLAC"
+    },
+    {
+      "title": "Mother Earth Radio",
+      "artist": "World • Jazz • Blues",
+      "stream": "https://motherearth.streamserver24.com/listen/motherearth/motherearth",
+      "badge": "FLAC"
+    },
+    {
+      "title": "Mother Earth Klassik",
+      "artist": "Klasik • Orkestra",
+      "stream": "http://motherearth.streamserver24.com:18910/motherearth.klassik",
+      "badge": "FLAC"
+    },
+    {
+      "title": "Mother Earth Instrumental",
+      "artist": "Instrumental • Santai",
+      "stream": "http://motherearth.streamserver24.com:18920/motherearth.instrumental",
+      "badge": "FLAC"
+    },
+    {
+      "title": "Mother Earth Jazz",
+      "artist": "Jazz",
+      "stream": "https://motherearth.streamserver24.com/listen/motherearth_jazz/motherearth.jazz",
+      "badge": "FLAC"
+    },
+    {
+      "title": "SuperStereo 1",
+      "artist": "Pop • Rock • Hi-Res",
+      "stream": "http://icecast.centaury.cl:7570/SuperStereoHiRes1",
+      "badge": "Hi-Res"
+    },
+    {
+      "title": "SuperStereo 1+",
+      "artist": "Pop • Rock • Hi-Res Plus",
+      "stream": "http://icecast.centaury.cl:7570/SuperStereoHiRes1Plus",
+      "badge": "Hi-Res"
+    },
+    {
+      "title": "SuperStereo 2",
+      "artist": "Jazz • Soul • Blues",
+      "stream": "http://icecast.centaury.cl:7570/SuperStereoHiRes2",
+      "badge": "Hi-Res"
+    },
+    {
+      "title": "SuperStereo 3",
+      "artist": "Klasik • Orkestra",
+      "stream": "http://icecast.centaury.cl:7570/SuperStereoHiRes3",
+      "badge": "Hi-Res"
+    },
+    {
+      "title": "SuperStereo 3+",
+      "artist": "Klasik Plus",
+      "stream": "http://icecast.centaury.cl:7570/SuperStereoHiRes3Plus",
+      "badge": "Hi-Res"
+    },
+    {
+      "title": "SuperStereo 4",
+      "artist": "Latin • Bossa • Tango",
+      "stream": "http://icecast.centaury.cl:7570/SuperStereoHiRes4",
+      "badge": "Hi-Res"
+    },
+    {
+      "title": "SuperStereo 4+",
+      "artist": "Latin Plus",
+      "stream": "http://icecast.centaury.cl:7570/SuperStereoHiRes4Plus",
+      "badge": "Hi-Res"
+    },
+    {
+      "title": "SuperStereo 5",
+      "artist": "World • Etnik",
+      "stream": "http://icecast.centaury.cl:7570/SuperStereoHiRes5",
+      "badge": "Hi-Res"
+    },
+    {
+      "title": "SuperStereo 6",
+      "artist": "Elektronik • Chill",
+      "stream": "http://icecast.centaury.cl:7570/SuperStereoHiRes6",
+      "badge": "Hi-Res"
+    },
+    {
+      "title": "SuperStereo 7",
+      "artist": "New Age • Ambient",
+      "stream": "http://icecast.centaury.cl:7570/SuperStereoHires7",
+      "badge": "Hi-Res"
+    },
+    {
+      "title": "Radio Calico",
+      "artist": "Eklektik • Pelbagai Genre",
+      "stream": "http://radio3.radio-calico.com:8080/calico",
+      "badge": "FLAC"
+    }
+  ]
+}
