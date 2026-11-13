@@ -1,7 +1,7 @@
 {
-  "versionCode": 10,
-  "versionName": "1.0.10",
+  "versionCode": 11,
+  "versionName": "1.0.11",
   "url": "https://mohdrozaimi205.github.io/MyChord-PWA/MyChord.apk",
-  "notes_ms": "• Notifikasi kemas kini terus dalam app\n• Main lagu lebih lancar (tiada tersekat-sekat)\n• 14 tema termasuk Kaca (iOS) & 8 ikon",
-  "notes_en": "• In-app update notifications\n• Smoother playback (no more stuttering)\n• 14 themes incl. Glass (iOS) & 8 icons"
+  "notes_ms": "• 4 tema baharu: Merah Flix, Muzik Merah, Biru Ajaib, Sian Prima\n• Kini 18 tema keseluruhan\n• Warna terinspirasi Netflix, YouTube Music, Disney+, Amazon Prime",
+  "notes_en": "• 4 new themes: Flix Red, Music Red, Magic Blue, Prime Cyan\n• Now 18 themes total\n• Colors inspired by Netflix, YouTube Music, Disney+, Amazon Prime"
 }
