@@ -1,7 +1,7 @@
 {
-  "versionCode": 11,
-  "versionName": "1.0.11",
+  "versionCode": 12,
+  "versionName": "1.0.12",
   "url": "https://mohdrozaimi205.github.io/MyChord-PWA/MyChord.apk",
-  "notes_ms": "• 4 tema baharu: Merah Flix, Muzik Merah, Biru Ajaib, Sian Prima\n• Kini 18 tema keseluruhan\n• Warna terinspirasi Netflix, YouTube Music, Disney+, Amazon Prime",
-  "notes_en": "• 4 new themes: Flix Red, Music Red, Magic Blue, Prime Cyan\n• Now 18 themes total\n• Colors inspired by Netflix, YouTube Music, Disney+, Amazon Prime"
+  "notes_ms": "• 21 rak penemuan baharu (12 YouTube Music + 9 Spotify)\n• Dengar Semula, Kegemaran Terlupa, Penemuan Harian, Trending & lagi\n• Radio Popular, Artis Baharu, Coffeehouse, OST & lagi dari Spotify\n• Rak pintar: penuh bila log masuk, fallback bila tanpa akaun",
+  "notes_en": "• 21 new discovery shelves (12 YouTube Music + 9 Spotify)\n• Listen Again, Forgotten Favourites, Daily Discover, Trending & more\n• Popular Radio, New Artists, Coffeehouse, OST & more from Spotify\n• Smart shelves: full when logged in, fallback without account"
 }
