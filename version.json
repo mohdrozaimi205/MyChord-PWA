@@ -1,7 +1,7 @@
 {
-  "versionCode": 15,
-  "versionName": "1.0.15",
+  "versionCode": 17,
+  "versionName": "1.0.17",
   "url": "https://mohdrozaimi205.github.io/MyChord-PWA/MyChord.apk",
-  "notes_ms": "• Widget Sedang Dimainkan — tambah widget ke skrin utama telefon\n• Mood & Genre — jelajah lagu mengikut mood: riang, sedih, tenang, rock, nasyid & lagi\n• Sandaran & Pulih — eksport/import kegemaran, senarai main & tetapan\n• Tile Mood & Genre di halaman utama",
-  "notes_en": "• Now Playing Widget — add a widget to your home screen\n• Moods & Genres — browse by mood: happy, sad, chill, rock, nasyid & more\n• Backup & Restore — export/import likes, playlists & settings\n• Moods & Genres tile on home page"
+  "notes_ms": "• Home baharu gaya LastWave — Quick Access, Jump Back In, Because You Listen, Discover New Music, Artist Spotlight & lagi\n• Algorithm 80% Malaysia (terkini, popular, 90an, nostalgia, nasyid, indie, dangdut, rock kapak)\n• Algorithm 10% English Popular & 90s Classics\n• Algorithm 5% Soundtrack dunia (MY, Korea, Jepun, Hollywood, Bollywood)\n• Algorithm 5% Rileks (Coffeehouse & Lofi)\n• Mood & Genre chips inline di Home — pilih mood terus tanpa buka halaman baru",
+  "notes_en": "• LastWave-style Home — Quick Access, Jump Back In, Because You Listen, Discover New Music, Artist Spotlight & more\n• Algorithm: 80% Malaysian music (latest, popular, 90s, nostalgia, nasyid, indie, dangdut, rock kapak)\n• Algorithm: 10% English Popular & 90s Classics\n• Algorithm: 5% World Soundtracks (MY, Korea, Japan, Hollywood, Bollywood)\n• Algorithm: 5% Chill (Coffeehouse & Lofi)\n• Inline Mood & Genre chips on Home — pick a mood without leaving the page"
 }
