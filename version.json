@@ -1,6 +1,6 @@
 {
-  "versionCode": 14,
-  "versionName": "1.0.14",
+  "versionCode": 15,
+  "versionName": "1.0.15",
   "url": "https://mohdrozaimi205.github.io/MyChord-PWA/MyChord.apk",
   "notes_ms": "• Widget Sedang Dimainkan — tambah widget ke skrin utama telefon\n• Mood & Genre — jelajah lagu mengikut mood: riang, sedih, tenang, rock, nasyid & lagi\n• Sandaran & Pulih — eksport/import kegemaran, senarai main & tetapan\n• Tile Mood & Genre di halaman utama",
   "notes_en": "• Now Playing Widget — add a widget to your home screen\n• Moods & Genres — browse by mood: happy, sad, chill, rock, nasyid & more\n• Backup & Restore — export/import likes, playlists & settings\n• Moods & Genres tile on home page"
