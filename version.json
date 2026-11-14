@@ -1,7 +1,7 @@
 {
-  "versionCode": 12,
-  "versionName": "1.0.12",
+  "versionCode": 13,
+  "versionName": "1.0.13",
   "url": "https://mohdrozaimi205.github.io/MyChord-PWA/MyChord.apk",
-  "notes_ms": "• 21 rak penemuan baharu (12 YouTube Music + 9 Spotify)\n• Dengar Semula, Kegemaran Terlupa, Penemuan Harian, Trending & lagi\n• Radio Popular, Artis Baharu, Coffeehouse, OST & lagi dari Spotify\n• Rak pintar: penuh bila log masuk, fallback bila tanpa akaun",
-  "notes_en": "• 21 new discovery shelves (12 YouTube Music + 9 Spotify)\n• Listen Again, Forgotten Favourites, Daily Discover, Trending & more\n• Popular Radio, New Artists, Coffeehouse, OST & more from Spotify\n• Smart shelves: full when logged in, fallback without account"
+  "notes_ms": "• 12 stesen radio Malaysia popular: ERA FM, Suria FM, Kedah FM, Mutiara FM & lagi\n• Stesen sentiasa tersedia walaupun tanpa internet stabil\n• Rak Radio Malaysia Popular di halaman utama",
+  "notes_en": "• 12 popular Malaysian radio stations: ERA FM, Suria FM, Kedah FM, Mutiara FM & more\n• Stations always available even without stable internet\n• Popular Malaysian Radio shelf on home page"
 }
