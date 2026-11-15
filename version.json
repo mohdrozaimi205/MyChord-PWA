@@ -1,7 +1,7 @@
 {
-  "versionCode": 17,
-  "versionName": "1.0.17",
+  "versionCode": 19,
+  "versionName": "1.0.19",
   "url": "https://mohdrozaimi205.github.io/MyChord-PWA/MyChord.apk",
-  "notes_ms": "• Home baharu gaya LastWave — Quick Access, Jump Back In, Because You Listen, Discover New Music, Artist Spotlight & lagi\n• Algorithm 80% Malaysia (terkini, popular, 90an, nostalgia, nasyid, indie, dangdut, rock kapak)\n• Algorithm 10% English Popular & 90s Classics\n• Algorithm 5% Soundtrack dunia (MY, Korea, Jepun, Hollywood, Bollywood)\n• Algorithm 5% Rileks (Coffeehouse & Lofi)\n• Mood & Genre chips inline di Home — pilih mood terus tanpa buka halaman baru",
-  "notes_en": "• LastWave-style Home — Quick Access, Jump Back In, Because You Listen, Discover New Music, Artist Spotlight & more\n• Algorithm: 80% Malaysian music (latest, popular, 90s, nostalgia, nasyid, indie, dangdut, rock kapak)\n• Algorithm: 10% English Popular & 90s Classics\n• Algorithm: 5% World Soundtracks (MY, Korea, Japan, Hollywood, Bollywood)\n• Algorithm: 5% Chill (Coffeehouse & Lofi)\n• Inline Mood & Genre chips on Home — pick a mood without leaving the page"
+  "notes_ms": "• Home susunan LastWave — filter chips, tarikh, hero card, Quick Access, Genre Saya, Mood landscape\n• Quick Picks format senarai menegak (bukan horizontal)\n• Kandungan fokus Melayu — Lagu Melayu Popular, Lagu Melayu Baru, Artis Melayu Terhebat\n• New Releases 70% Melayu Malaysia, 20% Inggeris\n• Buang lagu Hindi/India/Bollywood dari semua rak\n• Tema baharu: Glassmorphism (kaca iOS frosted glass biru-putih)\n• Mood & Genre kad landscape boleh klik dalam Home",
+  "notes_en": "• LastWave Home layout — filter chips, date display, hero card, Quick Access, My Genres, Mood landscape\n• Quick Picks in vertical list format (not horizontal)\n• Malay-focused content — Popular Malay Songs, New Malay Music, Best Malay Artists\n• New Releases 70% Malaysian Malay, 20% English\n• Removed Hindi/Indian/Bollywood content from all shelves\n• New theme: Glassmorphism (iOS frosted glass with blue-white tint)\n• Clickable Mood & Genre landscape cards on Home"
 }
