@@ -2,6 +2,6 @@
   "versionCode": 23,
   "versionName": "1.0.23",
   "url": "https://mohdrozaimi205.github.io/MyChord-PWA/MyChord.apk",
-  "notes_ms": "• MyChord Hi-Fi Engine: pemain radio internet & fail FLAC tempatan\n• Pembaca metadata FLAC: bit depth, sample rate, saluran & durasi\n• Equalizer 10-band untuk fail tempatan\n• Pautan rasmi TIDAL; akaun Free tidak membuka full-track FLAC melalui MyChord",
-  "notes_en": "• MyChord Hi-Fi Engine: internet radio & local FLAC player\n• FLAC metadata reader: bit depth, sample rate, channels & duration\n• 10-band equalizer for local files\n• Official TIDAL link; Free accounts do not unlock full-track FLAC in MyChord"
+  "notes_ms": "• MyChord Hi-Fi Engine: butang Hi-Fi di skrin pemain\n• Papar kualiti sebenar: codec, bitrate, kadar sampel, bit depth, lossless/lossy, peranti output\n• Mod Hi-Fi Tulen: matikan EQ/kesan, laluan 32-bit float, kualiti tertinggi\n• Bit-perfect ke USB DAC (Android 14+)",
+  "notes_en": "• MyChord Hi-Fi Engine: Hi-Fi button on the player\n• Shows real quality: codec, bitrate, sample rate, bit depth, lossless/lossy, output device\n• Pure Hi-Fi Mode: EQ/effects off, 32-bit float path, highest quality\n• Bit-perfect to USB DAC (Android 14+)"
 }
