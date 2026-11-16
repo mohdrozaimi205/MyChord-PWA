@@ -1,7 +1,7 @@
 {
-  "versionCode": 23,
-  "versionName": "1.0.23",
-  "url": "https://mohdrozaimi205.github.io/MyChord-PWA/MyChord.apk",
-  "notes_ms": "• MyChord Hi-Fi Engine: butang Hi-Fi di skrin pemain\n• Papar kualiti sebenar: codec, bitrate, kadar sampel, bit depth, lossless/lossy, peranti output\n• Mod Hi-Fi Tulen: matikan EQ/kesan, laluan 32-bit float, kualiti tertinggi\n• Bit-perfect ke USB DAC (Android 14+)",
-  "notes_en": "• MyChord Hi-Fi Engine: Hi-Fi button on the player\n• Shows real quality: codec, bitrate, sample rate, bit depth, lossless/lossy, output device\n• Pure Hi-Fi Mode: EQ/effects off, 32-bit float path, highest quality\n• Bit-perfect to USB DAC (Android 14+)"
+  "versionCode": 27,
+  "versionName": "1.0.27",
+  "url": "https://github.com/mohdrozaimi205/MyChord/releases/download/v1.0.27/MyChord-v1.0.27.apk",
+  "notes_ms": "• UI dirombak sepenuhnya gaya YouTube Music\n• 3 tema baharu: TubeAwak (merah gelap), SpotHijau, IosGlass\n• Skrin utama: speed dial artis, 10+ rak lagu penemuan\n• Pemain: baris ikon tindakan (suka, lirik, simpan, kongsi, muat turun, campuran)\n• Cip bawah: kesan, pemasa tidur, kualiti, Hi-Fi, Dengar Bersama",
+  "notes_en": "• Full UI rebuild in YouTube Music style\n• 3 new themes: TubeAwak (dark red), SpotHijau, IosGlass\n• Home screen: artist speed dial, 10+ discovery shelves\n• Player: action icons row (like, lyrics, save, share, download, mix)\n• Bottom chips: effects, sleep timer, quality, Hi-Fi, Listen Together"
 }
