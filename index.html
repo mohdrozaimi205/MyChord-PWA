@@ -80,6 +80,24 @@
         <input class="field" id="instanceInput" placeholder="https://pipedapi.example.com">
         <button class="btn tonal" id="btnSaveInstance" data-t="save"></button>
       </div>
+      <div class="overline pad">MYCHORD HI-FI ENGINE</div>
+      <section class="card pad-card hifi-card" id="myChordHifi">
+        <div class="hifi-head"><div><b>Hi-Fi Player</b><p class="dim small">Radio online & fail FLAC peribadi</p></div><span class="hifi-pill">PWA</span></div>
+        <p class="small dim">Mainkan fail FLAC tempatan atau cuba radio internet. Kualiti sebenar dipaparkan hanya apabila metadata sumber boleh dibaca.</p>
+        <div class="hifi-actions">
+          <button class="btn accent" id="hifiPick">Pilih fail FLAC</button>
+          <button class="btn tonal" id="hifiTidal">Buka TIDAL</button>
+        </div>
+        <input type="file" id="hifiFile" accept=".flac,audio/flac,audio/*" hidden>
+        <div class="hifi-meta" id="hifiMeta" aria-live="polite">Belum ada fail dipilih.</div>
+        <audio id="hifiAudio" controls preload="none"></audio>
+        <div class="hifi-eq-head"><b>Equalizer 10-band</b><button class="text-btn" id="hifiEqReset">Reset</button></div>
+        <div class="hifi-eq" id="hifiEq"></div>
+        <p class="small dim" id="hifiEqNote">EQ berfungsi untuk fail tempatan yang dipilih. Stream luar mungkin menyekat pemprosesan audio melalui CORS.</p>
+        <div class="hifi-radio-head"><b>Radio internet</b><span class="small dim">Codec bergantung stesen</span></div>
+        <div id="hifiStations" class="hifi-stations"></div>
+        <p class="small dim">Nota: TIDAL Free tidak memberi akses full-track FLAC melalui MyChord. Integrasi katalog/stream penuh memerlukan kelayakan API dan pelan yang membenarkan playback. Butang TIDAL membuka perkhidmatan rasmi.</p>
+      </section>
       <div class="overline pad" data-t="android_title"></div>
       <div class="card pad-card"><p class="dim small" data-t="android_note"></p></div>
       <p class="about" id="about"></p>
@@ -161,5 +179,6 @@
   <div id="toast" hidden></div>
 
   <script src="app.js"></script>
+  <script src="addons/mychord-hifi.js"></script>
 </body>
 </html>

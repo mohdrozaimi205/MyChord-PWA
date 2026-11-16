@@ -1,7 +1,7 @@
 {
-  "versionCode": 22,
-  "versionName": "1.0.22",
+  "versionCode": 23,
+  "versionName": "1.0.23",
   "url": "https://mohdrozaimi205.github.io/MyChord-PWA/MyChord.apk",
-  "notes_ms": "• Klik nama artis dalam Now Playing → buka halaman artis dengan poster & senarai lagu\n• Artist Spotlight — 10 artis popular Malaysia dalam Home\n• Recent Artists — 10 artis terakhir dimainkan, auto-rotate\n• Artist For You — bubble artis Melayu terkenal masa kini\n• Tema baharu: LastWave (gelap charcoal + aksen coral)\n• Algoritma auto-queue — cadangan lagu seterusnya berdasarkan artis & lagu semasa\n• Penapisan Hindi dikekalkan pada semua carian",
-  "notes_en": "• Click artist name in Now Playing → opens artist page with poster & song list\n• Artist Spotlight — 10 popular Malaysian artists on Home\n• Recent Artists — 10 most recently played artists, auto-rotate\n• Artist For You — bubble chips of trending Malay artists\n• New theme: LastWave (dark charcoal + coral accent)\n• Auto-queue algorithm — suggests next songs based on current artist & track\n• Hindi filtering maintained across all searches"
+  "notes_ms": "• MyChord Hi-Fi Engine: pemain radio internet & fail FLAC tempatan\n• Pembaca metadata FLAC: bit depth, sample rate, saluran & durasi\n• Equalizer 10-band untuk fail tempatan\n• Pautan rasmi TIDAL; akaun Free tidak membuka full-track FLAC melalui MyChord",
+  "notes_en": "• MyChord Hi-Fi Engine: internet radio & local FLAC player\n• FLAC metadata reader: bit depth, sample rate, channels & duration\n• 10-band equalizer for local files\n• Official TIDAL link; Free accounts do not unlock full-track FLAC in MyChord"
 }
