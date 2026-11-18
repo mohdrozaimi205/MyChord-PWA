@@ -1,7 +1,7 @@
 {
-  "versionCode": 28,
-  "versionName": "1.0.28",
-  "url": "https://github.com/mohdrozaimi205/MyChord/releases/download/v1.0.28/MyChord-v1.0.28.apk",
-  "notes_ms": "• Speed Dial responsif (2 lajur potret, 4 lajur landskap)\n• Menu 3-titik penuh gaya YTM: Kongsi, Mulakan Mix, Pin ke Speed Dial, Tak Berminat\n• Rak baharu: Dari Pustaka Anda, Penemuan Segar, Pop Hits, Cover & Remixed\n• Menu akaun lengkap: Suka, Sejarah, Muat Turun, Senarai Main, Mood & Genre\n• Butang Main Semua pada rak Quick Picks",
-  "notes_en": "• Responsive Speed Dial (2 col portrait, 4 col landscape)\n• Full YTM 3-dot menu: Share, Start Mix, Pin to Speed Dial, Not Interested\n• New shelves: From Your Library, Fresh Find, Pop Hits, Cover & Remixed\n• Full account menu: Liked, History, Downloads, Playlists, Mood & Genre\n• Play All button on Quick Picks shelves"
+  "versionCode": 29,
+  "versionName": "1.0.29",
+  "url": "https://github.com/mohdrozaimi205/MyChord/releases/download/v1.0.29/MyChord-v1.0.29.apk",
+  "notes_ms": "• Fix: Top bar (kongsi, cari, akaun) kini boleh diklik\n• Top bar & cip penapis kekal tetap di atas (gaya YouTube Music)\n• Kandungan sahaja yang scroll, bukan keseluruhan skrin",
+  "notes_en": "• Fix: Top bar (share, search, account) buttons now clickable\n• Top bar & filter chips stay fixed at top (YouTube Music style)\n• Only content scrolls, not the entire screen"
 }
