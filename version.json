@@ -1,7 +1,7 @@
 {
-  "versionCode": 29,
-  "versionName": "1.0.29",
-  "url": "https://github.com/mohdrozaimi205/MyChord/releases/download/v1.0.29/MyChord-v1.0.29.apk",
-  "notes_ms": "• Fix: Top bar (kongsi, cari, akaun) kini boleh diklik\n• Top bar & cip penapis kekal tetap di atas (gaya YouTube Music)\n• Kandungan sahaja yang scroll, bukan keseluruhan skrin",
-  "notes_en": "• Fix: Top bar (share, search, account) buttons now clickable\n• Top bar & filter chips stay fixed at top (YouTube Music style)\n• Only content scrolls, not the entire screen"
+  "versionCode": 30,
+  "versionName": "1.0.30",
+  "url": "https://github.com/mohdrozaimi205/MyChord/releases/download/v1.0.30/MyChord-v1.0.30.apk",
+  "notes_ms": "• Fix: Top bar kini di bawah status bar (bateri/signal/wifi) pada semua peranti\n• Sokongan Android 15 edge-to-edge — ikon tidak lagi bertindih\n• Chip 'Semua' kini scroll ke atas dengan lancar",
+  "notes_en": "• Fix: Top bar now sits below system status bar (battery/signal/wifi) on all devices\n• Android 15 edge-to-edge support — icons no longer overlap\n• 'All' chip now smoothly scrolls to top"
 }
